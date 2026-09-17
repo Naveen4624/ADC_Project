@@ -52,7 +52,7 @@ int main(void)
 
     		ADC_StartGroupConversion(&adc_pal_1_instance,0U);
     		AdcStatus = adc_pal_1_results0[0];
-    		duty = (AdcStatus * 500U) / 255U;
+    		duty = (AdcStatus * 300U) / 255U;
     		PWM_UpdateDuty(&pwm_pal_1_instance,0U,duty);
     	}
 
